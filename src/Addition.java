@@ -22,5 +22,4 @@ public class Addition {
         System.out.println(" Printing result using the class digit variable:");
         System.out.println(sum*classDigit);
     }
-
 }
