@@ -14,8 +14,10 @@ public class ComparisonOperator {
         int num2 = scanner.nextInt();
         System.out.println(num1*classDigit);
         System.out.println(num2*classDigit);
+        System.out.println(num2*6);
+        System.out.println(num2*2+4);
 //          using the IF() block of code to validate the statement.
-//        If an IF() block is valid it gets executed. if
+//        If an if block is valid it gets executed. if
 //        not the program skips the If() block of code
         if(num1 == num2){
             System.out.printf("%d==%d%n", num1,num2);
