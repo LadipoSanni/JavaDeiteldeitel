@@ -1,9 +1,9 @@
+package chapter1_3;
 
-
-public class Account {
+public class AccountModel {
     private String name;
 
-    public Account(String name){
+    public AccountModel(String name){
         this.name = name;
     }
 

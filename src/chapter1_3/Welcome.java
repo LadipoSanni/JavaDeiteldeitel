@@ -1,3 +1,5 @@
+package chapter1_3;
+
 public class Welcome {
 //    Test: Printing the string using the static variable.
 //    executing the main method using the println and printf.

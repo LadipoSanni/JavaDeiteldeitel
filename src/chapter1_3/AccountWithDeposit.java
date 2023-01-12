@@ -1,4 +1,4 @@
-// Account class with a double instance variable balance,
+package chapter1_3;// Account class with a double instance variable balance,
 // constructor and deposit method that perform validation.
 
 public class AccountWithDeposit {

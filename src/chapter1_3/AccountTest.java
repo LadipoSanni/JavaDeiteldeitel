@@ -1,3 +1,7 @@
+package chapter1_3;
+
+import chapter1_3.AccountModel;
+
 import java.util.Scanner;
 
 public class AccountTest {
@@ -5,8 +9,8 @@ public class AccountTest {
 
         Scanner input = new Scanner(System.in);
 
-        Account myAccount = new Account(input.nextLine());
-        Account myAccount1 = new Account(input.nextLine());
+        AccountModel myAccount = new AccountModel(input.nextLine());
+        AccountModel myAccount1 = new AccountModel(input.nextLine());
 
         System.out.printf("Initial name  is = %s%n%n", myAccount.getName());
 
