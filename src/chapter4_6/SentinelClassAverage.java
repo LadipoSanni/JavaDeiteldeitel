@@ -3,12 +3,9 @@ package chapter4_6;
 import java.util.Scanner;
 
 public class SentinelClassAverage {
-        //    This is the main method used to run java application
         public static void main(String[] args) {
-//      this is the statement to prompt data input and source of data collection
             Scanner take = new Scanner(System.in);
 
-//      declaration and initialisation phase
             int total = 0;  //initialisation of total to 0
             int gradeCounter = 0; //initialisation of gradeCounter to 0
 
@@ -25,11 +22,9 @@ public class SentinelClassAverage {
                 grade = take.nextInt(); //collection object.take grade
             }
 
-            //if user enter at least 1 grade...
             if (gradeCounter != 0){
                 //use number with decimal point to calculate grade
                 double average = (double) total/ gradeCounter;//right hand side
-                // converts int total to double explicitly
 
                 //display total and average of grades
                 System.out.printf("Class average is %.2f%n", average );
