@@ -4,36 +4,26 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+
 public class Solution {
-    public static int[] twoSum(int[] nums, int target){
+    public static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
+
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
             if (map.containsKey(complement)){
-                return new int[]{map.get(complement), i};
+                return new int[]{map.get(complement), nums[i]};
             }
-            map.put(nums[i], i );
+            map.put(nums[i], nums[i]);
         }
-        return new int[0];
-
-
-//    Scanner input = new Scanner(System.in);
-//    public int[] twoSum(int[] nums, int target){
-//        nums = new int[9];
-//        target = 9;
-//        nums[0] = input.nextInt();
-//
-//        int total = 0;
-//        int[] resut = {};
-//        for (int i = 1; i <= nums.length; i++) {
-//            if (nums[0]<target) {
-//                total += i;
-//                i = resut[i];
-//            }
-//        }
-//        return new int[0];
-//    }
-
+    return new int[0];
     }
-
+    public static void main(String[] args) {
+        int[] add2Options = {8, 4, 1, 5, 7, 9, 3};
+        int target = 9;
+        int[] result = twoSum(add2Options, target);
+        System.out.println("The numbers that add up to target is " + result[0] + "+" + result[1]+"=" +target);
+        System.out.println(Arrays.toString(result));
+    }
 }
+
