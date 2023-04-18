@@ -2,7 +2,7 @@ package exercisesJava;
 
 public class FibonacciiSeq {
     public static void main(String[] args) {
-        int num =17;
+        int num =12;
         fiboSeries(num);
     }
 

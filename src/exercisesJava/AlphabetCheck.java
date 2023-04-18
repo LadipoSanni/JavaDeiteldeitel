@@ -2,7 +2,7 @@ package exercisesJava;
 
 public class AlphabetCheck {
     public static void main(String[] args) {
-        char opshon = 'm';
+        char opshon = '/';
         checkIfItsAlphabet(opshon);
     }
 
@@ -11,7 +11,7 @@ public class AlphabetCheck {
         if (String.valueOf(opshon).matches(alphabet)){
             System.out.println("This letter: "+opshon+", is an alphabet");
         }else{
-        System.out.println("This letter: "+opshon+", is not an alphabet");
+        System.out.println("This character: "+opshon+", is not an alphabet");
         }
     }
 

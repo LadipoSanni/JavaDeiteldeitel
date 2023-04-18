@@ -6,13 +6,13 @@ public class HighSmallNum {
     int highest = nums[0];
     int smallest = nums[0];
 
-        for (int i = 0; i < nums.length; i++) {
-            if(nums[i]>highest){
+        for (int num : nums) {
+            if (num > highest) {
 
-                highest = nums[i];
+                highest = num;
             }
-            if(nums[i]<smallest)
-                smallest = nums[i];
+            if (num < smallest)
+                smallest = num;
         }
         System.out.println(highest);
         System.out.println(smallest);

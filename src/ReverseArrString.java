@@ -1,4 +1,4 @@
-public class SemicolonTest {
+public class ReverseArrString {
    public static void returnReverse(char[] arr){
       int k = 0;
       int j = arr.length-1;
@@ -12,12 +12,9 @@ public class SemicolonTest {
          j--;
       }
       System.out.println(arr);
-
-
    }
    public static void main(String[] args) {
       char[] reversArr = {'e','l','u','b','a',};
       returnReverse(reversArr);
-//      displayReversedArray(arr);
     }
 }

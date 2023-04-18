@@ -2,7 +2,7 @@ package exercisesJava;
 
 public class FindAscciValue {
     public static void main(String[] args) {
-        char sample = 'b';
+        char sample = '2';
         findAscValue(sample);
     }
 
