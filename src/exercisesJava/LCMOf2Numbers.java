@@ -5,8 +5,8 @@ import java.util.List;
 
 public class LCMOf2Numbers {
     public static void main(String[] args) {
-        int a = 38;
-        int b = 16;
+        int a = 16;
+        int b = 38;
         findLCM(a, b);
 
     }
@@ -49,11 +49,5 @@ public class LCMOf2Numbers {
         System.out.println(lcm);
         System.out.println(casingA);
         System.out.println(casingB);
-        for (int i =0; i< casingB.size(); i++) {
-            if (casingB.indexOf(i) != casingA.indexOf(i)) {
-                lcm = lcm * casingB.indexOf(i);
-            }
-            System.out.println(lcm);
-        }
     }
 }

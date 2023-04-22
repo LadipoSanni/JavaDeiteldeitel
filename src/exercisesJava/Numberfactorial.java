@@ -16,6 +16,7 @@ public class Numberfactorial {
             resot *= num;
             num--;
         }
-        System.out.println("The factorial of the number input is: "+ resot);
+        System.out.println("The factorial of the number " +
+                "from the standard input is: "+ resot);
     }
 }

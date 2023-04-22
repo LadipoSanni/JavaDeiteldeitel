@@ -2,7 +2,7 @@ package exercisesJava;
 
 public class AlphabetCheck {
     public static void main(String[] args) {
-        char opshon = '/';
+        char opshon = ']';
         checkIfItsAlphabet(opshon);
     }
 

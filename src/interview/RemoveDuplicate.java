@@ -25,7 +25,8 @@ public class RemoveDuplicate {
             }
         }
         int[] result = Arrays.copyOf(duplicOptions, len);
-        System.out.println(Arrays.toString(result));
+        duplicOptions=result;
+        System.out.println(Arrays.toString(duplicOptions));
 
     }
 }

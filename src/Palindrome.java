@@ -1,22 +1,21 @@
 
 public class Palindrome {
     public static void paliChecker(String words){
-        int startPointer = 0;
-        int endPointer = words.length()-1;
+        int thisEnd = 0;
+        int thatEnd = words.length()-1;
         char[] temp = words.toCharArray();
-        if (temp[startPointer] == temp[endPointer]){
-            while (startPointer<endPointer){
-                startPointer++;
-                endPointer--;
+        if (temp[thisEnd] == temp[thatEnd]){
+            while (thisEnd<thatEnd){
+                thisEnd++;
+                thatEnd--;
             }
             System.out.println("This word " + words + " is a palindrome");
         }else {
             System.out.println("This word " + words + " is not a palindrome");
         }
-
     }
     public static void main(String[] args) {
-        String choiceWord = "nnenn";
+        String choiceWord = "nnenna";
         paliChecker(choiceWord);
     }
 
