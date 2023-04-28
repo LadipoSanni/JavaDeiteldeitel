@@ -10,7 +10,7 @@ public class StaticInitializer {
     static boolean flag;
     static boolean res;
     static  {
-        if (B<=100&&H<=100){
+        if (B <= 100 && H <= 100){
             if (B <= 0 || H <= 0) {
                 res = flag;
                 System.out.println("java.lang.Exception: Breadth and height must be positive");
