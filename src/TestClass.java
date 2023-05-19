@@ -1,15 +1,28 @@
 
-import java.util.Arrays;
+import java.util.Scanner;
+
 
 
 public class TestClass {
     public static void main(String[] args) {
-        int[] table= {1,2,6,8,9};
-        table[0] = 9;
-        table[1] = 8;
-        table[3] = 2;
-        table[4] = 1;
-        System.out.println(Arrays.toString(table));
+        Scanner scanner = new Scanner(System.in);
+        int t = scanner.nextInt();
 
+        for (int i = 0; i < t; i++) {
+            int a = scanner.nextInt();
+            int b = scanner.nextInt();
+            int n = scanner.nextInt();
+
+        }
+        scanner.close();
     }
+//    int[] table = {1,2,6,8,9};
+//
+//        for(int i = table.length-1;i >= 0; i--) {
+//        System.out.print(table[i] + " ");
+//    }
+//        System.out.println();
+//
+//}
 }
+
