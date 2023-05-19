@@ -18,22 +18,22 @@ public class MissingNumberCheck {
         int numMissing = 0;
         ArrayList<Integer> missingNumbers = new ArrayList<>();
         ArrayList<Integer> tempCasing = new ArrayList<>();
-            for (int i = 0; i < numbers.length; i++) {
-                next = numbers[i];
-                tempCasing.add(next);
-                if (tempCasing.size()==2){
-                    prev = tempCasing.get(0);
-                    next = tempCasing.get(1);
-                    numMissing = next-prev;
-                    if (numMissing!=1&&next>1&&prev>1){
-                        while (prev<next-1){
+        for (int number : numbers) {
+            next = number;
+            tempCasing.add(next);
+            if (tempCasing.size() == 2) {
+                prev = tempCasing.get(0);
+                next = tempCasing.get(1);
+                numMissing = next - prev;
+                if (numMissing != 1 && next > 1 && prev > 1) {
+                    while (prev < next - 1) {
                         missingNumbers.add(++prev);
-                        }
                     }
-                    prev = next;
-                    tempCasing.remove(tempCasing.get(0));
                 }
+                prev = next;
+                tempCasing.remove(tempCasing.get(0));
             }
+        }
         System.out.println("These are the List of missing numbers: "+missingNumbers);
     }
 }
