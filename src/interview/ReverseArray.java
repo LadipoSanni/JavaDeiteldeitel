@@ -1,15 +1,28 @@
 package interview;
+
+
 public class ReverseArray {
     public static void main(String[] args) {
         char[] inst = {'s','e','m','i','c','o','l','o','n'};
-        reverseArr(inst);
+        String love = "!!!uoY evol i";
+        reverseArr(love.toCharArray());
+        reverseArr2(String.valueOf(inst));
     }
-    public static void reverseArr(char[] inst) {
-   StringBuilder revAray = new StringBuilder();
-        for (int i =  inst.length-1; i >= 0; i--) {
-            revAray.append(inst[i]);
+
+    private static void reverseArr2(String valueOf) {
+        String result = "";
+        for (int i = valueOf.length()-1; i >= 0 ; i--) {
+            result += valueOf.charAt(i);
         }
-        inst = revAray.toString().toCharArray();
-        System.out.print(inst);
+        System.out.println(result);
+
+    }
+
+    private static void reverseArr(char[] toCharArray) {
+        String result1 = "";
+        for (int i = toCharArray.length-1; i >=0 ; i--) {
+            result1 += toCharArray[i];
+        }
+        System.out.println(result1);
     }
 }
