@@ -10,18 +10,18 @@ public class ReverseArray {
     }
 
     private static void reverseArr2(String valueOf) {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for (int i = valueOf.length()-1; i >= 0 ; i--) {
-            result += valueOf.charAt(i);
+            result.append(valueOf.charAt(i));
         }
         System.out.println(result);
 
     }
 
     private static void reverseArr(char[] toCharArray) {
-        String result1 = "";
+        StringBuilder result1 = new StringBuilder();
         for (int i = toCharArray.length-1; i >=0 ; i--) {
-            result1 += toCharArray[i];
+            result1.append(toCharArray[i]);
         }
         System.out.println(result1);
     }

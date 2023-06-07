@@ -10,8 +10,8 @@ public class Solution {
     }
     public static int[] getProductArray(int[] k) {
         int n = k.length;
-        int[] product = new int[n];
 
+        int[] product = new int[n];
         int[] leftProduct = new int[n];
         int[] rightProduct = new int[n];
 
