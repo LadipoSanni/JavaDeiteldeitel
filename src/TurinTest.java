@@ -6,33 +6,32 @@ public class TurinTest {
 //    count how many shift has 4 characters in alphabetical order.
 //    return the total of shifts with alphabetical order
 public static void main(String[] args) {
-    String S = "abcdcfchijk";
+    String S = "abdcbcfchijkz";
      shiftTheString(S);
     }
-    private static int shiftTheString(String s) {
+    static int shiftTheString(String s) {
     StringBuilder shifting = new StringBuilder();
     int count = 0;
+    char last = 'a';
 
         for (int i = 0; i < s.length(); i++) {
             if (shifting.length()<4) {
-                shifting.append(s.charAt(i));
+                    char temp = s.charAt(i);
+                    if(temp >= last){
+                        shifting.append(temp);
+                        last = temp;
+                    }
+                    else {
+                        last = temp;
+                    }
             }
             if (shifting.length()==4){
-                char[] shifts = String.valueOf(shifting).toCharArray();
-                for (int j = 0; j < shifts.length; j++) {
-                    char fes = shifts[j];
-                    char temp = 'a';
-                    if (temp>fes){
-                        break;
-                    }else {
-                        temp=fes;
-                        count++;
-                    }
-
-                }
+                count++;
                 shifting.deleteCharAt(0);
             }
         }
-    return count;
+        System.out.println(count);
+        return count;
     }
 }
+

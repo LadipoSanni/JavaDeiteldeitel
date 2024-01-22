@@ -19,7 +19,3 @@ public class CharacterFrequencyInString {
     }
 
 }
-//NumberFormat usFormat = NumberFormat.getCurrencyInstance(Locale.US);
-//        NumberFormat indiaFormat = NumberFormat.getCurrencyInstance(new Locale("en", "IN"));
-//        NumberFormat chinaFormat = NumberFormat.getCurrencyInstance(Locale.CHINA);
-//        NumberFormat franceFormat = NumberFormat.getCurrencyInstance(Locale.FRANCE);

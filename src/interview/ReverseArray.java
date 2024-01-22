@@ -9,10 +9,10 @@ public class ReverseArray {
         reverseArr2(String.valueOf(inst));
     }
 
-    private static void reverseArr2(String valueOf) {
+    private static void reverseArr2(String newValueOf) {
         StringBuilder result = new StringBuilder();
-        for (int i = valueOf.length()-1; i >= 0 ; i--) {
-            result.append(valueOf.charAt(i));
+        for (int i = newValueOf.length()-1; i >= 0 ; i--) {
+            result.append(newValueOf.charAt(i));
         }
         System.out.println(result);
 

@@ -8,10 +8,10 @@ public class Tasking {
        int a = 0;
        int b = 0;
        String op = null;
-       runtask(a, op, b);
+       runTask(a, op, b);
     }
 
-    private static void runtask(int a, String op, int b) {
+    private static void runTask(int a, String op, int b) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter first number");
         a = input.nextInt();
@@ -47,7 +47,7 @@ public class Tasking {
                 result = a % b;
                 System.out.println(result);
             }
-            default -> System.out.println("This is not an operand for this task. you get the default result = 0");
+            default -> System.out.println("That is not an operand for this task. you get the default result = 0");
         }
     }
 }
